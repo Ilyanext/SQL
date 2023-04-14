@@ -59,7 +59,7 @@ ON employee.id = city.city_id;
 SELECT * FROM employee
     CROSS JOIN city;
 
--- Получите имена городов, в которых никто не живет.
+-- Получите имена городов, в которых никто не живет
 SELECT city.city_name, employee.first_name
     FROM employee
     LEFT JOIN city ON employee.id=city.city_id
