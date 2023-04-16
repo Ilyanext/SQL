@@ -48,5 +48,5 @@ SELECT * FROM employee
 -- Получите имена городов, в которых никто не живет
 SELECT city_name, employee.first_name
     FROM employee
-     JOIN city ON employee.city_id=city.city_id
+     RIGHT JOIN city ON employee.city_id=city.city_id
     WHERE employee.first_name IS NULL;
